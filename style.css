@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f7;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  width: 500px;
+  border-top: 9px solid #3381ff;
+  display: flex;
+  flex-direction: column;
+
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(138, 133, 138, 0.82);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(138, 133, 138, 0.82);
+  box-shadow: 1px 1px 5px 0px rgba(138, 133, 138, 0.82);
+}
+
+.monto-container {
+  text-align: left;
+}
+
+.monedas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px 5px;
+}
+
+.from {
+  text-align: left;
+}
+
+.from h6 {
+  margin-bottom: 7px;
+}
+
+.from select {
+  background: white;
+  padding: 8px;
+  font-size: 13px;
+  width: auto;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.change a {
+  color: black;
+}
+
+.to {
+  text-align: left;
+}
+
+.to h6 {
+  margin-bottom: 7px;
+}
+
+.to select {
+  background: white;
+  padding: 8px;
+  font-size: 13px;
+  width: auto;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+select:focus {
+  outline: none;
+}
+
+button {
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}

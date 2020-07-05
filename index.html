@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor de Monedas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e4521333c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="title">Convertidor de Monedas</h1>
+    <div class="main-container">
+      <div class="resultado">
+        <h5>Exchange Rate</h5>
+        <h3 id="exchange"></h3>
+      </div>
+
+      <div class="monto-container">
+        <h6>Monto</h6>
+        <input type="text" id="monto" />
+      </div>
+
+      <div class="monedas-container">
+        <div class="from">
+          <h6>From</h6>
+          <select name="coin" id="from-coin">
+            <option value="naira">Naira</option>
+          </select>
+        </div>
+
+        <div class="change">
+          <a href="#" class="change-btn"><i class="fas fa-exchange-alt"></i></a>
+        </div>
+
+        <div class="to">
+          <h6>To</h6>
+          <select name="coin" id="to-coin">
+            <option value="dolarEEUU">Dólar E.E.U.U</option>
+          </select>
+        </div>
+
+        <button id="convert-btn">CONVERT</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

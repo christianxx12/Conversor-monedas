@@ -6,5 +6,5 @@ button.addEventListener("click", convertir);
 
 function convertir() {
   var resultado = monto.value * 0.0026;
-  exchange.innerHTML = `$${resultado}`;
+  exchange.innerHTML = `$${resultado.toFixed(2)}`;
 }
